@@ -67,36 +67,6 @@ void cadastrarUsuario() {
         // Continua pedindo até obter uma idade válida
     }
 
-    /*
-     // Adicionar tratamento de erro para a idade
-    while (true) {
-        std::cout << "Digite a IDADE: ";
-
-        if (std::cin >> novoUsuario.idade && std::cin.peek() != '\n') {
-            std::cout << "Entrada invalida. Insira um valor inteiro.\n";
-            std::cin.clear(); // Limpar o estado de erro
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Descartar entrada inválida
-        }
-
-        else {
-            // Verificar se a idade é um valor válido
-            if (novoUsuario.idade > 0) {
-                if (novoUsuario.idade < 16) {
-                    std::cout << "Desculpe, voce não possui idade suficiente para abrir uma conta na carteira digital.\n";
-                    return;
-                }
-                break; // Sai do loop se a entrada for um valor inteiro positivo
-            } else {
-                std::cout << "Idade invalida. Insira um valor nao-negativo.\n";
-            }
-        }        
-    }
-    */
-   
-
-    //std::cout << "Digite a IDADE: ";
-    //std::cin >> novoUsuario.idade;
-
     std::cout << "Digite o CONTATO (email): ";
     std::cin >> novoUsuario.contato;
 
